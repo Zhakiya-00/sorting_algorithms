@@ -41,58 +41,41 @@ void insertion_sort_list(listint_t **list)
 
 					break;
 
-
-
 			if (holder->next && holder->prev)
 
 			{
-
 				holder->prev->next = holder->next;
 
 				holder->next->prev = holder->prev;
 
 			}
-
 			else
-
 			{
 
 				holder->prev->next = NULL;
 
 			}
 
-
-
 			holder->next = tmp;
 
 			if (tmp->prev)
 
 			{
-
 				tmp->prev->next = holder, holder->prev = tmp->prev;
 
 				tmp->prev = holder;
-
 			}
 
 			else
-
 			{
-
 				tmp->prev = holder, holder->prev = NULL;
 
 				*list = holder;
-
 			}
-
 			print_list(*list), node = *list;
-
 			continue;
 
 		}
-
 		node = node->next;
-
 	}
-
 }

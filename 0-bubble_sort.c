@@ -3,21 +3,12 @@
 
 
 /**
-
  * bubble_sort - Sort an array with bubble sort
-
- *
-
  * @array: Pointer to an array of ints
-
  *
-
  * @size: Size of the array
-
  *
-
  * Return: Void.
-
  */
 
 

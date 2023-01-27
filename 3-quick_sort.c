@@ -75,17 +75,11 @@ size_t partition(int *array, size_t start, size_t end, size_t size)
 
 
 	if (pivot < array[i + 1])
-
 	{
-
 		trade(&array[i + 1], &array[end]);
-
 		print_array(array, size);
-
 	}
-
 	return (i + 1);
-
 }
 
 
